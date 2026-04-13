@@ -126,3 +126,33 @@ GSEA on GO Biological Process gene sets revealed a clear functional distinction 
 
 ![Figure 8: GSEA of GO Biological Processes](results/Fig8_gsea.png)
 **Figure 8:** Dotplot of GSEA results for GO Biological Process gene sets. Left panel shows activated pathways enriched in D05 macrophages, right panel shows suppressed pathways. Dot size reflects gene count and color reflects adjusted p-value.
+
+---
+
+## Discussion
+
+The scRNA-seq analysis of the respiratory mucosa at day 5 post-IAV infection revealed a diverse cellular landscape, with 29 transcriptionally distinct clusters spanning immune, epithelial, neuronal, and stromal lineages. This level of diversity is expected given the role of the nasal mucosa in coordinating barrier defense, mucociliary clearance, and immune surveillance (Ualiyeva et al., 2021).
+
+Both tissue-resident populations, including macrophages, endothelial cells, fibroblasts, and sustentacular cells, and recruited immune populations such as neutrophils, NK cells, and dendritic cells were identified. This reflects the cellular reorganization that occurs during early innate immune activation in the upper respiratory tract. In the UMAP, there is a clear enrichment of day 5 (D05) cells within macrophage clusters compared to naive samples. This is consistent with the expansion of myeloid populations during peak viral load, which is a well-established feature of the early response to IAV infection (Cardani et al., 2017).
+
+This enrichment is largely restricted to the myeloid compartment and is less pronounced in epithelial or neuronal populations. This suggests that the response at day 5 is primarily immunological rather than broadly disruptive to tissue structure, which aligns with the localized nature of IAV infection in this model (Kazer et al., 2024).
+
+The differential expression analysis of macrophages shows a transcriptional response dominated by interferon-stimulated genes (ISGs), with very few downregulated genes. This indicates that macrophages at this time point are strongly activated in an antiviral state rather than undergoing widespread transcriptional suppression.
+
+The most strongly upregulated gene is Rsad2 (log2FC = 4.51), which encodes Viperin, a well-characterized antiviral protein that inhibits viral replication by producing a nucleotide analogue that disrupts viral RNA synthesis (Gizzi et al., 2018). This mechanism specifically targets viral polymerases without affecting host RNA, making it a highly effective antiviral response. Previous studies have shown that loss of Rsad2 leads to increased viral replication and worse outcomes in IAV infection, highlighting its importance in vivo (Tan et al., 2012). Its strong induction across D05 macrophages supports its central role at peak infection.
+
+The coordinated upregulation of Ifit1, Ifit2, and Ifit3 represents another key component of this antiviral response. These proteins work together to recognize and bind viral RNA, preventing its translation and limiting viral replication (Fensterl & Sen, 2015). Their expression is driven by viral RNA sensing pathways and is minimal in naive macrophages, indicating that their induction is directly infection-dependent.
+
+Isg15 is also strongly upregulated, although low baseline expression is present in a subset of naive macrophages. ISG15 modifies target proteins through ISGylation, which disrupts viral protein function and enhances interferon signaling (Perng & Bhatt, 2015). This low baseline expression likely reflects a primed immune state in tissue-resident macrophages, which is then amplified during active infection.
+
+Additional upregulated genes, including Gbp2 and Oasl1, further highlight the breadth of the antiviral response. Gbp2 contributes to restricting viral replication, while Oasl1 enhances viral RNA sensing pathways, reinforcing the interferon response (MacMicking, 2012; Zhu et al., 2014). The upregulation of complement factor Cfb also suggests activation of complement-mediated mechanisms that support clearance of infected cells.
+
+Gene set enrichment analysis (GSEA) provides broader context for these gene-level changes. One of the most notable findings is the enrichment of antigen processing and presentation via MHC class I. This suggests that by day 5, macrophages are beginning to transition from purely innate functions toward roles that support the activation of adaptive immunity (Yewdell & Hill, 2002). This timing is consistent with the progression of IAV infection, where antigen presentation precedes peak T cell responses (Iwasaki & Pillai, 2014).
+
+At the same time, pathways related to viral restriction and regulation of the viral life cycle are enriched, indicating that macrophages are deploying multiple antiviral strategies simultaneously. These mechanisms act at different stages of infection, from viral entry to replication and release, highlighting the coordinated nature of the antiviral response.
+
+Interestingly, several pathways related to synaptic and cytoplasmic translation are downregulated in D05 macrophages. Although these terms are typically associated with neuronal processes, they also reflect general aspects of protein synthesis. Their suppression suggests a shift away from normal cellular functions toward prioritizing antiviral activity.
+
+This is consistent with known metabolic reprogramming in activated immune cells, where energy and resources are redirected toward the production of antiviral proteins and cytokines (O'Neill & Pearce, 2016). The additional suppression of cytoplasmic translation further supports this idea, suggesting that macrophages reduce overall protein synthesis while selectively maintaining translation of interferon-responsive genes.
+
+Overall, these results provide a clear picture of the macrophage response to IAV infection at day 5. The strong and coordinated upregulation of key antiviral genes, combined with pathway-level enrichment of interferon signaling, viral restriction, and antigen presentation, shows that macrophages mount a multi-layered defense during peak viral load. At the same time, the suppression of general translational programs reflects the metabolic cost of this response, with cells prioritizing antiviral activity over normal functions. Together, these findings are consistent with established models of IAV infection, while also providing a more detailed, cell-type-specific view of the macrophage response at single-cell resolution.
