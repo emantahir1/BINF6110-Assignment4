@@ -17,7 +17,7 @@
 
 ## Introduction
 
-Influenza A virus (IAV) is a negative-sense, single-stranded RNA virus and a major respiratory pathogen affecting both humans and animals worldwide (Krammer et al., 2018). It causes an estimated three to five million cases of severe illness each year and remains a significant public health concern due to its ability to rapidly evolve and cause pandemics (WHO, 2023). Infection begins in the nasal mucosa, which serves as the primary site of viral entry and early replication (Oslund & Bhatt, 2013). The nasal cavity contains several distinct regions, including the respiratory mucosa (RM), olfactory mucosa (OM), and lateral nasal gland (LNG), each with different cell types and roles in immune defense and viral detection (Kazer et al., 2024).
+Influenza A virus (IAV) is a negative-sense, single-stranded RNA virus and a major respiratory pathogen affecting both humans and animals worldwide (Krammer et al., 2018). It causes an estimated three to five million cases of severe illness each year and remains a significant public health concern due to its ability to rapidly evolve and cause pandemics (WHO, 2023). Infection begins in the nasal mucosa, which serves as the primary site of viral entry and early replication (Kazer et al., 2024). The nasal cavity contains several distinct regions, including the respiratory mucosa (RM), olfactory mucosa (OM), and lateral nasal gland (LNG), each with different cell types and roles in immune defense and viral detection (Kazer et al., 2024).
 
 The innate immune response to IAV is triggered within hours of infection and is largely driven by immune cells in the nasal mucosa (Iwasaki & Pillai, 2014). Among these, macrophages play a key role as both early detectors of infection and regulators of the inflammatory response. These cells recognize viral components through pattern recognition receptors, which activate signaling pathways that lead to the production of type I and type II interferons, as well as interferon-stimulated genes (ISGs) (Schneider et al., 2014). This interferon response is one of the earliest and most important antiviral defenses, and both its timing and intensity can strongly influence disease outcome (Iwasaki & Pillai, 2014).
 
@@ -37,7 +37,7 @@ The dataset used in this study was obtained from Kazer et al. (2024), a publicly
 
 ### Quality Control
 
-Mitochondrial gene content was calculated for each cell as a percentage of total counts using the PercentageFeatureSet() function in Seurat v5, using the pattern "^mt-" to identify mouse mitochondrial genes. High mitochondrial content indicates that a cell is stressed or dying, as cytoplasmic RNA leaks out while mitochondrial transcripts remain, artificially inflating their proportion (Osorio & Cai, 2020). Cells were filtered to retain those with more than 200 detected genes, fewer than 4,000 detected genes, and less than 15% mitochondrial content. The lower gene count threshold removes empty droplets, which contain ambient RNA rather than a true cell. The upper threshold removes likely doublets, which are droplets containing two cells captured together and counted as one. The mitochondrial threshold of 15% was set based on visual inspection of violin plots showing that the vast majority of cells fell well below this value, with only a small tail of outliers above it. After filtering, 26,905 cells were retained for downstream analysis.
+Mitochondrial gene content was calculated for each cell as a percentage of total counts using the PercentageFeatureSet() function in Seurat v5, using the pattern "^mt-" to identify mouse mitochondrial genes. High mitochondrial content indicates that a cell is stressed or dying, as cytoplasmic RNA leaks out while mitochondrial transcripts remain, artificially inflating their proportion (Osorio & Cai, 2021). Cells were filtered to retain those with more than 200 detected genes, fewer than 4,000 detected genes, and less than 15% mitochondrial content. The lower gene count threshold removes empty droplets, which contain ambient RNA rather than a true cell. The upper threshold removes likely doublets, which are droplets containing two cells captured together and counted as one. The mitochondrial threshold of 15% was set based on visual inspection of violin plots showing that the vast majority of cells fell well below this value, with only a small tail of outliers above it. After filtering, 26,905 cells were retained for downstream analysis.
 
 ### Normalization and Feature Selection
 
@@ -143,7 +143,7 @@ The most strongly upregulated gene is Rsad2 (log2FC = 4.51), which encodes Viper
 
 The coordinated upregulation of Ifit1, Ifit2, and Ifit3 represents another key component of this antiviral response. These proteins work together to recognize and bind viral RNA, preventing its translation and limiting viral replication (Fensterl & Sen, 2015). Their expression is driven by viral RNA sensing pathways and is minimal in naive macrophages, indicating that their induction is directly infection-dependent.
 
-Isg15 is also strongly upregulated, although low baseline expression is present in a subset of naive macrophages. ISG15 modifies target proteins through ISGylation, which disrupts viral protein function and enhances interferon signaling (Perng & Bhatt, 2015). This low baseline expression likely reflects a primed immune state in tissue-resident macrophages, which is then amplified during active infection.
+Isg15 is also strongly upregulated, although low baseline expression is present in a subset of naive macrophages. ISG15 modifies target proteins through ISGylation, which disrupts viral protein function and enhances interferon signaling (Shi et al., 2010). This low baseline expression likely reflects a primed immune state in tissue-resident macrophages, which is then amplified during active infection.
 
 Additional upregulated genes, including Gbp2 and Oasl1, further highlight the breadth of the antiviral response. Gbp2 contributes to restricting viral replication, while Oasl1 enhances viral RNA sensing pathways, reinforcing the interferon response (MacMicking, 2012; Zhu et al., 2014). The upregulation of complement factor Cfb also suggests activation of complement-mediated mechanisms that support clearance of infected cells.
 
@@ -167,7 +167,7 @@ Durante, M. A., Kurtenbach, S., Sargi, Z. B., Harbour, J. W., Choi, R., Kurtenba
 
 Fensterl, V., & Sen, G. C. (2015). Interferon-induced Ifit proteins: Their role in viral pathogenesis. *Journal of Virology*, 89(5), 2462–2468. https://doi.org/10.1128/JVI.02744-14
 
-Gizzi, A. S., Grove, T. L., Arnold, J. J., Jose, J., Jangra, R. K., Garforth, S. J., Du, Q., Cahill, S. M., Dulyaninova, N. G., Love, J. D., Dandey, V. P., Bhatt, D. L., Bhatt, S., Bhatt, P., & Bhatt, T. (2018). A naturally occurring antiviral ribonucleotide encoded by the human genome. *Nature*, 558(7711), 610–614. https://doi.org/10.1038/s41586-018-0238-4
+Gizzi, A. S., Grove, T. L., Arnold, J. J., Jose, J., Jangra, R. K., Garforth, S. J., Du, Q., Cahill, S. M., Dulyaninova, N. G., Love, J. D., Chandran, K., Bresnick, A. R., Cameron, C. E., & Almo, S. C. (2018). A naturally occurring antiviral ribonucleotide encoded by the human genome. *Nature*, 558(7711), 610–614. https://doi.org/10.1038/s41586-018-0238-4
 
 Hafemeister, C., & Satija, R. (2019). Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression. *Genome Biology*, 20(1), 296. https://doi.org/10.1186/s13059-019-1874-1
 
@@ -212,8 +212,6 @@ Subramanian, A., Tamayo, P., Mootha, V. K., Mukherjee, S., Ebert, B. L., Gillett
 Tan, K. S., Olfat, F., Phoon, M. C., Hsu, J. P., Howe, J. L., Thumboo, J., & Chow, V. T. (2012). In vivo and in vitro studies on the antiviral activities of viperin against influenza H1N1 and H3N2 virus infection. *Journal of General Virology*, 93(6), 1269–1277. https://doi.org/10.1099/vir.0.040824-0
 
 Ualiyeva, S., Hallen, N., Kanaoka, Y., Ledderose, C., Matsumoto, I., Junger, W., Barrett, N. A., & Bankova, L. G. (2021). Airway brush cells generate cysteinyl leukotrienes through the ATP sensor P2Y2. *Science Immunology*, 5(43), eaax7224. https://doi.org/10.1126/sciimmunol.aax7224
-
-Verschoor, A., Kemper, C., & Köhl, J. (2011). Complement receptors. In *eLS*. John Wiley & Sons. https://doi.org/10.1002/9780470015902.a0000512.pub3
 
 WHO. (2023). *Influenza (seasonal)*. World Health Organization. https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)
 
