@@ -156,3 +156,69 @@ Interestingly, several pathways related to synaptic and cytoplasmic translation 
 This is consistent with known metabolic reprogramming in activated immune cells, where energy and resources are redirected toward the production of antiviral proteins and cytokines (O'Neill & Pearce, 2016). The additional suppression of cytoplasmic translation further supports this idea, suggesting that macrophages reduce overall protein synthesis while selectively maintaining translation of interferon-responsive genes.
 
 Overall, these results provide a clear picture of the macrophage response to IAV infection at day 5. The strong and coordinated upregulation of key antiviral genes, combined with pathway-level enrichment of interferon signaling, viral restriction, and antigen presentation, shows that macrophages mount a multi-layered defense during peak viral load. At the same time, the suppression of general translational programs reflects the metabolic cost of this response, with cells prioritizing antiviral activity over normal functions. Together, these findings are consistent with established models of IAV infection, while also providing a more detailed, cell-type-specific view of the macrophage response at single-cell resolution.
+
+---
+
+## References
+
+Cardani, A., Boulton, A., Kim, T. S., & Braciale, T. J. (2017). Alveolar macrophages prevent lethal influenza pneumonia by inhibiting infection of type-1 alveolar epithelial cells. *PLOS Pathogens*, 13(1), e1006140. https://doi.org/10.1371/journal.ppat.1006140
+
+Durante, M. A., Kurtenbach, S., Sargi, Z. B., Harbour, J. W., Choi, R., Kurtenbach, S., Goss, G. M., Matsunami, H., & Goldstein, B. J. (2020). Single-cell analysis of olfactory neurogenesis and differentiation in adult humans. *Nature Neuroscience*, 23(3), 323–326. https://doi.org/10.1038/s41593-020-0587-9
+
+Fensterl, V., & Sen, G. C. (2015). Interferon-induced Ifit proteins: Their role in viral pathogenesis. *Journal of Virology*, 89(5), 2462–2468. https://doi.org/10.1128/JVI.02744-14
+
+Gizzi, A. S., Grove, T. L., Arnold, J. J., Jose, J., Jangra, R. K., Garforth, S. J., Du, Q., Cahill, S. M., Dulyaninova, N. G., Love, J. D., Dandey, V. P., Bhatt, D. L., Bhatt, S., Bhatt, P., & Bhatt, T. (2018). A naturally occurring antiviral ribonucleotide encoded by the human genome. *Nature*, 558(7711), 610–614. https://doi.org/10.1038/s41586-018-0238-4
+
+Hafemeister, C., & Satija, R. (2019). Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression. *Genome Biology*, 20(1), 296. https://doi.org/10.1186/s13059-019-1874-1
+
+Hao, Y., Hao, S., Andersen-Nissen, E., Mauck, W. M., Zheng, S., Butler, A., Lee, M. J., Wilk, A. J., Darby, C., Zager, M., Hoffman, P., Stoeckius, M., Papalexi, E., Mimitou, E. P., Jain, J., Srivastava, A., Stuart, T., Fleming, L. M., Yeung, B., … Satija, R. (2021). Integrated analysis of multimodal single-cell data. *Cell*, 184(13), 3573–3587. https://doi.org/10.1016/j.cell.2021.04.048
+
+Iwasaki, A., & Pillai, P. S. (2014). Innate immunity to influenza virus infection. *Nature Reviews Immunology*, 14(5), 315–328. https://doi.org/10.1038/nri3665
+
+Jovic, D., Liang, X., Zeng, H., Lin, L., Xu, F., & Luo, Y. (2022). Single-cell RNA sequencing technologies and applications: A brief overview. *Clinical and Translational Medicine*, 12(3), e694. https://doi.org/10.1002/ctm2.694
+
+Kazer, S. W., Matysiak Match, C., Langan, E. M., Messou, M.-A., LaSalle, T. J., O'Leary, E., Marbourg, J., Naughton, K., von Andrian, U. H., & Ordovas-Montanes, J. (2024). Primary nasal influenza infection rewires tissue-scale memory response dynamics. *Nature*, 630, 990–998. https://doi.org/10.1038/s41586-024-07742-4
+
+Korsunsky, I., Millard, N., Fan, J., Slowikowski, K., Zhang, F., Wei, K., Baglaenko, Y., Brenner, M., Loh, P. R., & Raychaudhuri, S. (2019). Fast, sensitive and accurate integration of single-cell data with Harmony. *Nature Methods*, 16(12), 1289–1296. https://doi.org/10.1038/s41592-019-0619-0
+
+Krammer, F., Smith, G. J. D., Fouchier, R. A. M., Peiris, M., Kedzierska, K., Doherty, P. C., Palese, P., Shaw, M. L., Treanor, J., Webster, R. G., & García-Sastre, A. (2018). Influenza. *Nature Reviews Disease Primers*, 4(1), 3. https://doi.org/10.1038/s41572-018-0001-2
+
+Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15(12), 550. https://doi.org/10.1186/s13059-014-0550-8
+
+Luecken, M. D., Büttner, M., Chaichoompu, K., Danese, A., Interlandi, M., Mueller, M. F., Strobl, D. C., Zappia, L., Dugas, M., Colomé-Tatché, M., & Theis, F. J. (2022). Benchmarking atlas-level data integration in single-cell genomics. *Nature Methods*, 19(1), 41–50. https://doi.org/10.1038/s41592-021-01336-8
+
+MacMicking, J. D. (2012). Interferon-inducible effector mechanisms in cell-autonomous immunity. *Nature Reviews Immunology*, 12(5), 367–382. https://doi.org/10.1038/nri3210
+
+Marx, V. (2024). Method of the year: Single-cell long-read sequencing. *Nature Methods*, 20(1), 1–6. https://doi.org/10.1038/s41592-023-02098-9
+
+McInnes, L., Healy, J., & Melville, J. (2018). UMAP: Uniform manifold approximation and projection for dimension reduction. *arXiv preprint arXiv:1802.03426*. https://doi.org/10.48550/arXiv.1802.03426
+
+O'Neill, L. A. J., & Pearce, E. J. (2016). Immunometabolism governs dendritic cell and macrophage function. *Journal of Experimental Medicine*, 213(1), 15–23. https://doi.org/10.1084/jem.20151570
+
+Osorio, D., & Cai, J. J. (2021). Systematic determination of the mitochondrial proportion in human and mice tissues for single-cell RNA-sequencing data quality control. *Bioinformatics*, 37(7), 963–967. https://doi.org/10.1093/bioinformatics/btaa751
+
+Pasquini, G., Rojo Arias, J. E., Schäfer, P., & Busskamp, V. (2021). Automated methods for cell type annotation on scRNA-seq data. *Computational and Structural Biotechnology Journal*, 19, 961–969. https://doi.org/10.1016/j.csbj.2021.01.015
+
+Schneider, W. M., Chevillotte, M. D., & Rice, C. M. (2014). Interferon-stimulated genes: A complex web of host defenses. *Annual Review of Immunology*, 32, 513–545. https://doi.org/10.1146/annurev-immunol-032713-120231
+
+Shi, H.-X., Yang, K., Liu, X., Liu, X.-Y., Wei, B., Shan, Y.-F., Zhu, L.-H., & Wang, C. (2010). Positive regulation of interferon regulatory factor 3 activation by Herc5 via ISG15 modification. *Molecular and Cellular Biology*, 30(10), 2424–2436. https://doi.org/10.1128/MCB.01466-09
+
+Squair, J. W., Gautier, M., Kathe, C., Anderson, M. A., James, N. D., Hutson, T. H., Hudelle, R., Qaiser, T., Matson, K. J. E., Barraud, Q., Levine, A. J., La Manno, G., Skinnider, M. A., & Courtine, G. (2021). Confronting false discoveries in single-cell differential expression. *Nature Communications*, 12(1), 5692. https://doi.org/10.1038/s41467-021-25960-2
+
+Stuart, T., Butler, A., Hoffman, P., Hafemeister, C., Papalexi, E., Mauck, W. M., Hao, Y., Stoeckius, M., Smibert, P., & Satija, R. (2019). Comprehensive integration of single-cell data. *Cell*, 177(7), 1888–1902. https://doi.org/10.1016/j.cell.2019.05.031
+
+Subramanian, A., Tamayo, P., Mootha, V. K., Mukherjee, S., Ebert, B. L., Gillette, M. A., Paulovich, A., Pomeroy, S. L., Golub, T. R., Lander, E. S., & Mesirov, J. P. (2005). Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles. *Proceedings of the National Academy of Sciences*, 102(43), 15545–15550. https://doi.org/10.1073/pnas.0506580102
+
+Tan, K. S., Olfat, F., Phoon, M. C., Hsu, J. P., Howe, J. L., Thumboo, J., & Chow, V. T. (2012). In vivo and in vitro studies on the antiviral activities of viperin against influenza H1N1 and H3N2 virus infection. *Journal of General Virology*, 93(6), 1269–1277. https://doi.org/10.1099/vir.0.040824-0
+
+Ualiyeva, S., Hallen, N., Kanaoka, Y., Ledderose, C., Matsumoto, I., Junger, W., Barrett, N. A., & Bankova, L. G. (2021). Airway brush cells generate cysteinyl leukotrienes through the ATP sensor P2Y2. *Science Immunology*, 5(43), eaax7224. https://doi.org/10.1126/sciimmunol.aax7224
+
+Verschoor, A., Kemper, C., & Köhl, J. (2011). Complement receptors. In *eLS*. John Wiley & Sons. https://doi.org/10.1002/9780470015902.a0000512.pub3
+
+WHO. (2023). *Influenza (seasonal)*. World Health Organization. https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)
+
+Wu, T., Hu, E., Xu, S., Chen, M., Guo, P., Dai, Z., Feng, T., Zhou, L., Tang, W., Zhan, L., Fu, X., Liu, S., Bo, X., & Yu, G. (2021). clusterProfiler 4.0: A universal enrichment tool for interpreting omics data. *Innovation*, 2(3), 100141. https://doi.org/10.1016/j.xinn.2021.100141
+
+Yewdell, J. W., & Hill, A. B. (2002). Viral interference with antigen presentation. *Nature Immunology*, 3(11), 1019–1025. https://doi.org/10.1038/ni1102-1019
+
+Zhu, J., Zhang, Y., Ghosh, A., Cuevas, R. A., Forero, A., Dhar, J., Ibsen, M. S., Schmid-Burgk, J. L., Schmidt, T., Ganapathiraju, M. K., Fujita, T., Hartmann, R., Barik, S., Hornung, V., Coyne, C. B., & Sarkar, S. N. (2014). Antiviral activity of human OASL protein is mediated by enhancing signaling of the RIG-I RNA sensor. *Immunity*, 40(6), 936–948. https://doi.org/10.1016/j.immuni.2014.05.007
